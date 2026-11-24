@@ -1,5 +1,5 @@
 .RECIPEPREFIX = >
-CFLAGS = -m32 -ffreestanding -fno-pie -fno-stack-protector -fcf-protection=none -nostdlib -O2 -Wall
+CFLAGS = -m32 -ffreestanding -fno-pie -fno-stack-protector -fcf-protection=none -nostdlib -O2 -Wall -fno-tree-loop-distribute-patterns
 
 all: kernel.bin
 
